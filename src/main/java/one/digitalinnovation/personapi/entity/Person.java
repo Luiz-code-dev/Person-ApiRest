@@ -1,11 +1,19 @@
-package one.digitalinnovation.personapi.entity;
+package one.digitalinnovation.personapi.Person2Api.src.main.java.one.digitalinnovation.personapi.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import one.digitalinnovation.personapi.entity.Phone;
 
-import javax.persistence.*;
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -20,7 +28,7 @@ public class Person {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable= false)
+    @Column(nullable = false)
     private String firstName;
 
     @Column(nullable = false)
@@ -28,7 +36,6 @@ public class Person {
 
     @Column(nullable = false, unique = true)
     private String cpf;
-
 
     private LocalDate birthDate;
 
