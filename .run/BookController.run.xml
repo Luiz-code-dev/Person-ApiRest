@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="BookController" type="Application" factoryName="Application" activateToolWindowBeforeRun="false">
-    <option name="MAIN_CLASS_NAME" value="one.digitalinnovation.personapi.PersonapiApplication" />
+  <configuration default="false" name="PersonController" type="Application" factoryName="Application" activateToolWindowBeforeRun="false">
+    <option name="MAIN_CLASS_NAME" value="one.digitalinnovation.PersonapiApplication" />
     <module name="personapi" />
     <method v="2">
       <option name="Make" enabled="true" />
